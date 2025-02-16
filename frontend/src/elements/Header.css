@@ -1,0 +1,84 @@
+.Header {
+    background-color: rgb(255, 255, 255);
+    height: 66px;
+    max-width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.Nav-container {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-right: 120px;
+    background: #ffffff;
+}
+
+.Header-nav {
+    color: rgb(124, 124, 124);
+    margin: 0 0 30% 40%;
+    min-width: 40%;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 10px;
+}
+
+.Header-nav:hover {
+    transition: ease-in;
+    transition-duration: 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+.Header-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.Header-title {
+    font-size: x-large;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.logo {
+    max-width: 190px;
+    max-height: 47px;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 60px;
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .Header {
+        height: 30%;
+        margin: 0 0 1% 0;
+    }
+
+    .Header-nav-container {
+        margin-top: 2%;
+        margin-right: 10%;
+        display: block;
+    }
+
+    .Header-nav {
+        display: block;
+        text-align: left;
+    }
+
+    .Header-button {
+        text-align: left;
+    }
+
+    .logo {
+        display: block;
+    }
+}

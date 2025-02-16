@@ -1,0 +1,284 @@
+.weather {
+    margin: 0;
+    padding: 20px;
+    min-height: calc(100vh - 140px);
+    background-color: #f5f5f5;
+}
+
+.search-container {
+    position: relative;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    z-index: 1000;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 400px;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.content-container {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.weather-info {
+    background-color: #f5f5f5;
+    flex: 0 0 auto;
+}
+
+.container {
+    display: flex;
+    background-color: #f5f5f5;
+    gap: 20px;
+}
+
+.primary {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+}
+
+.secondary {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.temp {
+    font-size: 36px;
+    font-weight: 500;
+    color: #333;
+    margin: 15px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+}
+
+.secondary div {
+    padding: 8px 0;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.secondary div:last-child {
+    border-bottom: none;
+}
+
+.unit-buttons {
+    margin-bottom: 15px;
+}
+
+.units {
+    font-size: 14px;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.units:hover {
+    color: #333;
+}
+
+.weather-playlist {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    max-width: 600px;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.weather-playlist h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.playlist-tracks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.track-item:hover {
+    background: #f0f0f0;
+    .track-name {
+        background: #f0f0f0;
+    }
+    .track-artist {
+        background: #f0f0f0;
+    }
+}
+
+.track-item.playing {
+    background: #e8e8e8;
+    border: 1px solid #ddd;
+}
+
+.track-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.track-info {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.track-item:hover {
+    background-color: #f0f0f0;
+}
+
+.track-name {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #ffffff;
+}
+
+.track-artist {
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #ffffff;
+}
+
+.loading, .no-playlist {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    color: #666;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-playlist {
+        width: 100%;
+        max-width: none;
+    }
+
+    .search-input {
+        width: 300px;
+    }
+}
+
+.suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: -3px;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: white;
+}
+
+.suggestion-item:hover {
+    background-color: #f5f5f5;
+}
+
+.suggestion-item:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.search-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.suggestions-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0 0 4px 0;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.suggestions-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+
+.bi-search {
+    background-color: #ffffff;
+}
