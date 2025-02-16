@@ -71,7 +71,7 @@ function Login() {
             		Login with Spotify to Continue
         	    </a>
     	    </Container>
-			<div className="legal">©Copyright {new Date().getFullYear()} Weather Waves | <a href='/privacy-policy'>Privacy Policy</a> | <b><a href='https://github.com/Shshiv0'>GitHub</a></b></div>
+			<div className="legal">©Copyright {new Date().getFullYear()} Weather Waves | <a href='/privacy-policy'>Privacy Policy</a> | <b><a href='https://github.com/Shshiv0/weather-waves'>GitHub</a></b></div>
 		</div>
 	);
 };

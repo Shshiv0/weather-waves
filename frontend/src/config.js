@@ -1,0 +1,6 @@
+export const config = {
+    OPENWEATHER_API_KEY: '71a860f4637cbcf7c03e7365e3c6a62a',
+    SPOTIFY_CLIENT_ID: 'b5a5742ac7ba4919b7de8c7b02cf2101',
+    SPOTIFY_CLIENT_SECRET: 'c8e675007a3f49b9aff8a4c67b566bf7',
+    SPOTIFY_REDIRECT_URI: 'http://localhost:3000'
+}; 
