@@ -1,2 +1,2 @@
-# Weather-Waves
-Music that synchronizes with the weather.
+# Weather Waves
+Music playlists based on weather. Vibe with the skies.
