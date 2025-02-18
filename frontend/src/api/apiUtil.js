@@ -4,8 +4,8 @@ import WebPlayback, {track} from '../elements/WebPlayback';
 import axios from 'axios';
 
 const spotifyApi = new SpotifyWebApi({
-  clientId: process.env.SPOTIFY_CLIENT_ID || "b5a5742ac7ba4919b7de8c7b02cf2101",
-  redirectUri: process.env.SPOTIFY_REDIRECT_URI || "http://localhost:3000"
+  clientId: process.env.SPOTIFY_CLIENT_ID,
+  redirectUri: process.env.SPOTIFY_REDIRECT_URI
 });
 
 export const PremiumContext = createContext(false);
